@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import "./Banner.css";
-import requests from "./Request";
 
 function Banner({fetchUrl}) {
   const [movie, setMovie] = useState([]);
@@ -14,7 +13,7 @@ function Banner({fetchUrl}) {
           Math.floor(Math.random() * request.data.results.length)
         ]
       );
-      return requests;
+      return request;
     }
 
     fetchData();
