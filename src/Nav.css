@@ -5,6 +5,8 @@
   width: 100%;
   height: 50px;
   z-index: 1;
+  animation: ease-in;
+  transition: 0.5s;
 }
 .nav__content {
   display: flex;
