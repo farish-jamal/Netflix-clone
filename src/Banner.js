@@ -11,7 +11,7 @@ function Banner({fetchUrl}) {
       const request = await axios.get(fetchUrl);
       setMovie(
         request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
+          Math.floor(Math.random() * request.data.results.length)
         ]
       );
       return requests;
